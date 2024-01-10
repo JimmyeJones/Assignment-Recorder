@@ -3,7 +3,7 @@ st.title("Assignments")
 page = st.selectbox("Page", ["Add", "View"])
 Assignments = []
 
-while true:
+while True:
   if page == "Add":
     x = st.text_input("Assignment")
     if st.button("Add"):
