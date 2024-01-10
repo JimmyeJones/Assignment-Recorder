@@ -3,11 +3,11 @@ st.title("Assignments")
 page = st.selectbox("Page", ["Add", "View"])
 Assignments = []
 
-while True:
-  if page == "Add":
-    x = st.text_input("Assignment")
-    if st.button("Add"):
-      Assignments.append(x)
+
+if page == "Add":
+  x = st.text_input("Assignment")
+  if st.button("Add"):
+    Assignments.append(x)
 
 for g in Assignments:
   st.text(g)
