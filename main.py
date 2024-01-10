@@ -9,5 +9,4 @@ if page == "Add":
   if st.button("Add"):
     Assignments.append(x)
 
-for g in Assignments:
-  st.text(g)
+st.text(Assignments)
