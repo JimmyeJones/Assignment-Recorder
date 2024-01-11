@@ -1,12 +1,13 @@
 import streamlit as st
 st.title("Assignments")
 page = st.selectbox("Page", ["Add", "View"])
-Assignments = []
+list = []
 
 
 if page == "Add":
   x = st.text_input("Assignment")
   if st.button("Add"):
-    Assignments.append(x)
+    list.append(x)
 
-st.text(Assignments)
+for g in list:
+  st.text(g)
