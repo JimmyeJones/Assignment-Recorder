@@ -2,10 +2,7 @@ import streamlit as st
 st.title("Assignments")
 page = st.selectbox("Page", ["Add", "View"])
 
-try:
-  list
-except TypeError:
-  list = []
+list = []
 
 
 if page == "Add":
