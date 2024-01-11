@@ -4,7 +4,7 @@ page = st.selectbox("Page", ["Add", "View"])
 
 try:
   list
-exept TypeError:
+except TypeError:
   list = []
 
 
